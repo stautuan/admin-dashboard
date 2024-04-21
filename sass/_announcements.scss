@@ -1,0 +1,18 @@
+.announcements {
+  div {
+    background-color: var(--contentColor);
+    padding: 3rem;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-2);
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: var(--grey);
+    line-height: 1.4;
+  }
+}
+
+hr {
+  margin: 2rem 0;
+}

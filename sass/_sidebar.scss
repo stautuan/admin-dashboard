@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+
+  .icon {
+    font-size: 4rem;
+  }
+}
+
+.icon:not(.logo .icon) {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.sidebar__link {
+  font-size: 2rem;
+  font-weight: var(--fw-500);
+  line-height: 2.5;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &:link,
+  &:visited {
+    color: var(--contentColor);
+  }
+
+  &:hover,
+  &:active {
+    background-color: var(--contentColor);
+    color: var(--textColor);
+  }
+}

@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* COLORS */
+  --backgroundColor: #e9ecef;
+  --textColor: #191923;
+  --sideBar: #0e79b2;
+  --hoverColor: #226488;
+  --accentColor: #ffa62b;
+  --contentColor: #fbfef9;
+  --black: #222;
+  --white: #fff;
+  --grey: #334155;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* TYPOGRAPHY */
+  --headingFont: "Montserrat", sans-serif;
+  --bodyFont: "Roboto", sans-serif;
+  --letterSpacing: 1px;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.8em;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  /* BOX SHADOW */
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Rest of the variables */
+  --max-width: 1120px;
+  --fixed-width: 600px;
+  --borderRadius: 0.25rem;
+  --transition: 0.3s ease-in-out all;
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-size: 1.6rem;
+  font-weight: var(--fw-400);
+  line-height: 1;
+  color: var(--textColor);
+  height: 100vh;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: var(--headingFont);
+  font-weight: var(--fw-600);
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+  line-height: 2.4;
+}
+
+h3 {
+  font-size: 1.953rem;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 1.563rem;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text-small {
+  font-size: var(--small-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Buttons */
+
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--sideBar);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+
+  :hover {
+    background: var(--hoverColor);
+    box-shadow: var(--shadow-3);
+  }
+}
+
+/* Alerts */
+
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+
+  &-danger {
+    color: var(--red-dark);
+    background: var(--red-light);
+  }
+
+  &-success {
+    color: var(--green-dark);
+    background: var(--green-light);
+  }
+}
+
+/* Form */
+
+.form {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+
+  &-label {
+    display: block;
+    font-size: var(--small-text);
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+  }
+
+  &-input,
+  &-textarea {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    border-radius: var(--borderRadius);
+    background: var(--backgroundColor);
+    border: 1px solid var(--grey-200);
+  }
+
+  &-row {
+    margin-bottom: 1rem;
+  }
+
+  &-textarea {
+    height: 7rem;
+  }
+
+  ::placeholder {
+    font-family: inherit;
+    color: var(--grey-400);
+  }
+
+  &-alert {
+    color: var(--red-dark);
+    letter-spacing: var(--letterSpacing);
+    text-transform: capitalize;
+  }
+}
+
+/* Spinner */
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--primary-500);
+  animation: spinner 0.6s linear infinite;
+  margin: 0 auto;
+}

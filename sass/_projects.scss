@@ -1,0 +1,25 @@
+.project {
+  &-item {
+    background-color: var(--contentColor);
+    line-height: 1.4;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-2);
+    padding: 3rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  p {
+    color: var(--grey);
+  }
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--accentColor);
+    height: 100%;
+    padding: 0.5rem;
+  }
+}

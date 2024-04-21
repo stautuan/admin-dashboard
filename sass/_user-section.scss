@@ -1,0 +1,17 @@
+.user {
+  &-greeting {
+    font-size: var(--extra-small-text);
+    font-weight: var(--fw-600);
+    margin-bottom: 0.8rem;
+  }
+
+  &-name {
+    font-size: 2.4rem;
+    font-weight: var(--fw-600);
+  }
+
+  &-nav__buttons {
+    display: flex;
+    gap: 3rem;
+  }
+}
