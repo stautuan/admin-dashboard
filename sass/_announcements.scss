@@ -7,9 +7,15 @@
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: var(--font-xs);
     color: var(--grey);
     line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 

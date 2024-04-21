@@ -34,6 +34,13 @@ html {
   --letterSpacing: 1px;
   --small-text: 0.875rem;
   --extra-small-text: 0.8em;
+  // 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+  --font-xs: 1.4rem;
+  --font-s: 1.6rem;
+  --font-md: 2rem;
+  --font-lg: 2.4rem;
+
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
@@ -54,16 +61,16 @@ html {
   --fixed-width: 600px;
   --borderRadius: 0.25rem;
   --transition: 0.3s ease-in-out all;
+  --gap: 2rem;
 }
 
 body {
   background: var(--backgroundColor);
   font-family: var(--bodyFont);
-  font-size: 1.6rem;
+  font-size: var(--font-s);
   font-weight: var(--fw-400);
   line-height: 1;
   color: var(--textColor);
-  height: 100vh;
 }
 
 p {
@@ -143,8 +150,8 @@ ul {
   text-transform: capitalize;
   display: inline-block;
 
-  :hover {
-    background: var(--hoverColor);
+  &:hover {
+    background-color: var(--hoverColor);
     box-shadow: var(--shadow-3);
   }
 }

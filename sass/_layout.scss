@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  height: 100%;
+  height: auto;
 }
 
 .header {
@@ -12,7 +12,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .content {
@@ -23,10 +23,12 @@
   &-nav {
     display: flex;
     flex-direction: column;
+    gap: var(--gap);
     background-color: var(--contentColor);
     box-shadow: var(--shadow-2);
     padding: 1.5rem 4rem;
 
+    &--top,
     &--bottom {
       display: flex;
       align-items: center;
@@ -34,10 +36,17 @@
     }
   }
 
+  &-search,
+  &-notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &-header {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: var(--gap);
 
     img {
       width: 7.5rem;
@@ -53,8 +62,8 @@
 
 .main-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 7fr 3fr;
+  gap: 3rem;
   padding: 2rem;
 }
 
@@ -62,5 +71,5 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 2rem;
+  gap: var(--gap);
 }

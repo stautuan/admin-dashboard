@@ -32,6 +32,10 @@ html {
   --letterSpacing: 1px;
   --small-text: 0.875rem;
   --extra-small-text: 0.8em;
+  --font-xs: 1.4rem;
+  --font-s: 1.6rem;
+  --font-md: 2rem;
+  --font-lg: 2.4rem;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
@@ -50,16 +54,16 @@ html {
   --fixed-width: 600px;
   --borderRadius: 0.25rem;
   --transition: 0.3s ease-in-out all;
+  --gap: 2rem;
 }
 
 body {
   background: var(--backgroundColor);
   font-family: var(--bodyFont);
-  font-size: 1.6rem;
+  font-size: var(--font-s);
   font-weight: var(--fw-400);
   line-height: 1;
   color: var(--textColor);
-  height: 100vh;
 }
 
 p {
@@ -139,8 +143,8 @@ ul {
   text-transform: capitalize;
   display: inline-block;
 }
-.btn :hover {
-  background: var(--hoverColor);
+.btn:hover {
+  background-color: var(--hoverColor);
   box-shadow: var(--shadow-3);
 }
 
@@ -222,7 +226,7 @@ ul {
 
 .container {
   display: flex;
-  height: 100%;
+  height: auto;
 }
 
 .header {
@@ -234,7 +238,7 @@ ul {
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .content {
@@ -244,19 +248,25 @@ ul {
 .user-nav {
   display: flex;
   flex-direction: column;
+  gap: var(--gap);
   background-color: var(--contentColor);
   box-shadow: var(--shadow-2);
   padding: 1.5rem 4rem;
 }
-.user-nav--bottom {
+.user-nav--top, .user-nav--bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.user-search, .user-notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .user-header {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: var(--gap);
 }
 .user-header img {
   width: 7.5rem;
@@ -269,8 +279,8 @@ ul {
 
 .main-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 7fr 3fr;
+  gap: 3rem;
   padding: 2rem;
 }
 
@@ -278,29 +288,29 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 2rem;
+  gap: var(--gap);
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   padding: 2rem;
 }
 .logo .icon {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .icon:not(.logo .icon) {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 1rem;
 }
 
 .sidebar__link {
-  font-size: 2rem;
+  font-size: var(--font-md);
   font-weight: var(--fw-500);
-  line-height: 2.5;
+  line-height: 2.3;
   padding: 0 2rem;
   display: flex;
   align-items: center;
@@ -312,15 +322,49 @@ ul {
 .sidebar__link:hover, .sidebar__link:active {
   background-color: var(--contentColor);
   color: var(--textColor);
+  box-shadow: var(--shadow-3);
 }
 
+.user-search {
+  flex: 0 0 40%;
+}
+.user-search input {
+  width: 90%;
+  border-radius: 5rem;
+  background-color: var(--backgroundColor);
+  border: none;
+  padding: 0.9rem 2.5rem;
+  margin-right: -5rem;
+  transition: var(--transition);
+}
+.user-search input:focus {
+  width: 100%;
+}
+.user-search .icon {
+  color: #777;
+}
+.user-notification {
+  gap: 3rem;
+  padding: 0 2rem;
+}
+.user-notification img {
+  width: 5rem;
+  border-radius: 50%;
+}
+.user-notification p {
+  font-size: 1.8rem;
+  font-weight: var(--fw-600);
+}
+.user-notification #user-icon {
+  font-size: 2.8rem;
+}
 .user-greeting {
   font-size: var(--extra-small-text);
   font-weight: var(--fw-600);
   margin-bottom: 0.8rem;
 }
 .user-name {
-  font-size: 2.4rem;
+  font-size: var(--font-lg);
   font-weight: var(--fw-600);
 }
 .user-nav__buttons {
@@ -357,9 +401,15 @@ ul {
   box-shadow: var(--shadow-2);
 }
 .announcements p {
-  font-size: 1.4rem;
+  font-size: var(--font-xs);
   color: var(--grey);
   line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 hr {
