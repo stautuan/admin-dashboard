@@ -3,61 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Admin Dashboard</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
         <div class="logo">
-          <ion-icon name="qr-code-sharp"></ion-icon>
+          <ion-icon class="icon" name="qr-code-sharp"></ion-icon>
           <h1>Dashboard</h1>
         </div>
         <nav class="sidebar">
-          <ul>
+          <ul class="sidebar__main">
             <li>
-              <ion-icon name="home-sharp"></ion-icon>
-              <span>Home</span>
+              <a href="#" class="sidebar__link">
+                <ion-icon class="icon" name="home-sharp"></ion-icon>
+                <span>Home</span></a
+              >
             </li>
             <li>
-              <ion-icon name="person-circle-sharp"></ion-icon>
-              <span>Profile</span>
+              <a href="#" class="sidebar__link">
+                <ion-icon class="icon" name="person-circle-sharp"></ion-icon>
+                <span>Profile</span></a
+              >
             </li>
             <li>
-              <ion-icon name="chatbox-sharp"></ion-icon>
-              <span>Messages</span>
+              <a href="#" class="sidebar__link">
+                <ion-icon class="icon" name="chatbox-sharp"></ion-icon>
+                <span>Messages</span></a
+              >
             </li>
             <li>
-              <ion-icon name="time-sharp"></ion-icon>
-              <span>History</span>
+              <a href="#" class="sidebar__link">
+                <ion-icon class="icon" name="time-sharp"></ion-icon>
+                <span>History</span></a
+              >
             </li>
             <li>
-              <ion-icon name="file-tray-full-sharp"></ion-icon>
-              <span>Tasks</span>
+              <a href="#" class="sidebar__link">
+                <ion-icon class="icon" name="file-tray-full-sharp"></ion-icon>
+                <span>Tasks</span></a
+              >
             </li>
             <li>
-              <ion-icon name="people-sharp"></ion-icon>
-              <span>Community</span>
+              <a href="#" class="sidebar__link">
+                <ion-icon class="icon" name="people-sharp"></ion-icon>
+                <span>Community</span></a
+              >
             </li>
           </ul>
-          <ul>
+          <ul class="sidebar__settings">
             <li>
-              <ion-icon name="cog-sharp"></ion-icon> <span>Settings</span>
+              <a href="#" class="sidebar__link">
+                <ion-icon class="icon" name="cog-sharp"></ion-icon>
+                <span>Settings</span></a
+              >
             </li>
             <li>
-              <ion-icon name="help-circle-sharp"></ion-icon>
-              <span>Support</span>
+              <a href="#" class="sidebar__link">
+                <ion-icon class="icon" name="help-circle-sharp"></ion-icon>
+                <span>Support</span></a
+              >
             </li>
             <li>
-              <ion-icon name="shield-checkmark-sharp"></ion-icon>
-              <span>Privacy</span>
+              <a href="#" class="sidebar__link">
+                <ion-icon class="icon" name="shield-checkmark-sharp"></ion-icon>
+                <span>Privacy</span></a
+              >
             </li>
           </ul>
         </nav>
       </header>
       <div class="content">
-        <div class="user-management">USERS PANEL</div>
-        <main class="main-content">MAIN</main>
+        <div class="user-nav">user-nav</div>
+
+        <main class="main-content">main</main>
       </div>
     </div>
 
