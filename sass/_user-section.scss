@@ -15,10 +15,6 @@
         width: 100%;
       }
     }
-
-    .icon {
-      color: #777;
-    }
   }
 
   &-notification {
@@ -33,14 +29,6 @@
     p {
       font-size: 1.8rem;
       font-weight: var(--fw-600);
-    }
-
-    svg {
-      width: 2.5rem;
-      height: 2.5rem;
-      path {
-        fill: var(--textColor);
-      }
     }
   }
 

@@ -339,9 +339,6 @@ ul {
 .user-search input:focus {
   width: 100%;
 }
-.user-search .icon {
-  color: #777;
-}
 .user-notification {
   gap: 3rem;
   padding: 0 2rem;
@@ -353,13 +350,6 @@ ul {
 .user-notification p {
   font-size: 1.8rem;
   font-weight: var(--fw-600);
-}
-.user-notification svg {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-.user-notification svg path {
-  fill: var(--textColor);
 }
 .user-greeting {
   font-size: var(--extra-small-text);
@@ -398,16 +388,10 @@ ul {
 }
 .project-item .project-icons {
   display: flex;
+  align-items: center;
   align-self: flex-end;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 1rem;
-}
-.project-item .project-icons svg {
-  width: 24px;
-  height: 24px;
-}
-.project-item .project-icons svg path {
-  fill: var(--textColor);
 }
 .project-item a:link,
 .project-item a:visited {
