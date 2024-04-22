@@ -297,16 +297,14 @@ ul {
   padding: 2rem;
 }
 .logo-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
-svg {
+.icon:not(.logo-icon) {
   width: 2.5rem;
   height: 2.5rem;
-}
-svg path {
-  fill: var(--white);
+  margin: 0 1rem;
 }
 
 .sidebar__link {
@@ -402,7 +400,7 @@ svg path {
   display: flex;
   align-self: flex-end;
   gap: 2rem;
-  margin-bottom: -1.5rem;
+  margin-top: 1rem;
 }
 .project-item .project-icons svg {
   width: 24px;

@@ -6,17 +6,15 @@
   padding: 2rem;
 
   &-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }
 
-svg {
+.icon:not(.logo-icon) {
   width: 2.5rem;
   height: 2.5rem;
-  path {
-    fill: var(--white);
-  }
+  margin: 0 1rem;
 }
 
 .sidebar__link {
