@@ -35,8 +35,12 @@
       font-weight: var(--fw-600);
     }
 
-    #user-icon {
-      font-size: 2.8rem;
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      path {
+        fill: var(--textColor);
+      }
     }
   }
 

@@ -296,23 +296,23 @@ ul {
   margin-bottom: 3.5rem;
   padding: 2rem;
 }
-.logo .icon {
-  font-size: 5rem;
+.logo-icon {
+  width: 4rem;
+  height: 4rem;
 }
 
-.icon:not(.logo .icon) {
-  font-size: 2.5rem;
-  padding: 1rem;
+svg {
+  width: 2.5rem;
+  height: 2.5rem;
 }
-
-.sidebar__item :not(:last-child) {
-  margin-bottom: 0.5rem;
+svg path {
+  fill: var(--white);
 }
 
 .sidebar__link {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   font-size: var(--font-md);
   font-weight: var(--fw-500);
   line-height: 2.3;
@@ -323,7 +323,6 @@ ul {
 }
 .sidebar__link:hover, .sidebar__link:active {
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--textColor);
   box-shadow: var(--shadow-2);
 }
 
@@ -357,8 +356,12 @@ ul {
   font-size: 1.8rem;
   font-weight: var(--fw-600);
 }
-.user-notification #user-icon {
-  font-size: 2.8rem;
+.user-notification svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.user-notification svg path {
+  fill: var(--textColor);
 }
 .user-greeting {
   font-size: var(--extra-small-text);
@@ -396,8 +399,17 @@ ul {
   padding: 0.5rem;
 }
 .project-item .project-icons {
+  display: flex;
   align-self: flex-end;
+  gap: 2rem;
   margin-bottom: -1.5rem;
+}
+.project-item .project-icons svg {
+  width: 24px;
+  height: 24px;
+}
+.project-item .project-icons svg path {
+  fill: var(--textColor);
 }
 .project-item a:link,
 .project-item a:visited {
