@@ -7,19 +7,19 @@
     padding: 3rem;
     overflow: hidden;
     position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--accentColor);
+      height: 100%;
+      padding: 0.5rem;
+    }
   }
 
   p {
     color: var(--grey);
-  }
-
-  ::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--accentColor);
-    height: 100%;
-    padding: 0.5rem;
   }
 }

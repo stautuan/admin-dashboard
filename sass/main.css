@@ -226,7 +226,7 @@ ul {
 
 .container {
   display: flex;
-  height: auto;
+  height: 100vh;
 }
 
 .header {
@@ -381,10 +381,7 @@ ul {
   overflow: hidden;
   position: relative;
 }
-.project p {
-  color: var(--grey);
-}
-.project ::before {
+.project-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -392,6 +389,9 @@ ul {
   background-color: var(--accentColor);
   height: 100%;
   padding: 0.5rem;
+}
+.project p {
+  color: var(--grey);
 }
 
 .announcements div {

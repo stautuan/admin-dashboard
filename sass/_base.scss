@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 *,
 ::after,
@@ -29,8 +29,8 @@ html {
   --green-dark: #0f5132;
 
   /* TYPOGRAPHY */
-  --headingFont: "Montserrat", sans-serif;
-  --bodyFont: "Roboto", sans-serif;
+  --headingFont: 'Montserrat', sans-serif;
+  --bodyFont: 'Roboto', sans-serif;
   --letterSpacing: 1px;
   --small-text: 0.875rem;
   --extra-small-text: 0.8em;
