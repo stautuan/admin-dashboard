@@ -16,37 +16,37 @@
         </div>
         <nav class="sidebar">
           <ul class="sidebar__main">
-            <li>
+            <li class="sidebar__item">
               <a href="#" class="sidebar__link">
                 <ion-icon class="icon" name="home-sharp"></ion-icon>
                 <span>Home</span></a
               >
             </li>
-            <li>
+            <li class="sidebar__item">
               <a href="#" class="sidebar__link">
                 <ion-icon class="icon" name="person-circle-sharp"></ion-icon>
                 <span>Profile</span></a
               >
             </li>
-            <li>
+            <li class="sidebar__item">
               <a href="#" class="sidebar__link">
                 <ion-icon class="icon" name="chatbox-sharp"></ion-icon>
                 <span>Messages</span></a
               >
             </li>
-            <li>
+            <li class="sidebar__item">
               <a href="#" class="sidebar__link">
                 <ion-icon class="icon" name="time-sharp"></ion-icon>
                 <span>History</span></a
               >
             </li>
-            <li>
+            <li class="sidebar__item">
               <a href="#" class="sidebar__link">
                 <ion-icon class="icon" name="file-tray-full-sharp"></ion-icon>
                 <span>Tasks</span></a
               >
             </li>
-            <li>
+            <li class="sidebar__item">
               <a href="#" class="sidebar__link">
                 <ion-icon class="icon" name="people-sharp"></ion-icon>
                 <span>Community</span></a
@@ -54,19 +54,19 @@
             </li>
           </ul>
           <ul class="sidebar__settings">
-            <li>
+            <li class="sidebar__item">
               <a href="#" class="sidebar__link">
                 <ion-icon class="icon" name="cog-sharp"></ion-icon>
                 <span>Settings</span></a
               >
             </li>
-            <li>
+            <li class="sidebar__item">
               <a href="#" class="sidebar__link">
                 <ion-icon class="icon" name="help-circle-sharp"></ion-icon>
                 <span>Support</span></a
               >
             </li>
-            <li>
+            <li class="sidebar__item">
               <a href="#" class="sidebar__link">
                 <ion-icon class="icon" name="shield-checkmark-sharp"></ion-icon>
                 <span>Privacy</span></a
@@ -85,7 +85,11 @@
               ></ion-icon>
             </div>
             <div class="user-notification">
-              <ion-icon id="user-icon" name="notifications-outline"></ion-icon>
+              <ion-icon
+                id="user-icon"
+                name="notifications-outline"
+                aria-label="notifications"
+              ></ion-icon>
               <img src="./images/user-1.jpg" alt="user photo" />
               <p>Emily Choi</p>
             </div>
@@ -119,9 +123,23 @@
                   </p>
                 </div>
                 <div class="project-icons">
-                  <ion-icon class="icon" name="heart-outline"></ion-icon>
-                  <ion-icon class="icon" name="eye-outline"></ion-icon>
-                  <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="favorite"
+                      name="heart-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="preview"
+                      name="eye-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon class="icon" name="git-branch-outline"></ion-icon
+                  ></a>
                 </div>
               </li>
               <li class="project-item">
@@ -133,9 +151,23 @@
                   </p>
                 </div>
                 <div class="project-icons">
-                  <ion-icon class="icon" name="heart-outline"></ion-icon>
-                  <ion-icon class="icon" name="eye-outline"></ion-icon>
-                  <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="favorite"
+                      name="heart-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="preview"
+                      name="eye-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon class="icon" name="git-branch-outline"></ion-icon
+                  ></a>
                 </div>
               </li>
               <li class="project-item">
@@ -147,9 +179,23 @@
                   </p>
                 </div>
                 <div class="project-icons">
-                  <ion-icon class="icon" name="heart-outline"></ion-icon>
-                  <ion-icon class="icon" name="eye-outline"></ion-icon>
-                  <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="favorite"
+                      name="heart-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="preview"
+                      name="eye-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon class="icon" name="git-branch-outline"></ion-icon
+                  ></a>
                 </div>
               </li>
               <li class="project-item">
@@ -163,9 +209,23 @@
                   </p>
                 </div>
                 <div class="project-icons">
-                  <ion-icon class="icon" name="heart-outline"></ion-icon>
-                  <ion-icon class="icon" name="eye-outline"></ion-icon>
-                  <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="favorite"
+                      name="heart-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="preview"
+                      name="eye-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon class="icon" name="git-branch-outline"></ion-icon
+                  ></a>
                 </div>
               </li>
               <li class="project-item">
@@ -177,9 +237,23 @@
                   </p>
                 </div>
                 <div class="project-icons">
-                  <ion-icon class="icon" name="heart-outline"></ion-icon>
-                  <ion-icon class="icon" name="eye-outline"></ion-icon>
-                  <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="favorite"
+                      name="heart-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="preview"
+                      name="eye-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon class="icon" name="git-branch-outline"></ion-icon
+                  ></a>
                 </div>
               </li>
               <li class="project-item">
@@ -192,9 +266,23 @@
                   </p>
                 </div>
                 <div class="project-icons">
-                  <ion-icon class="icon" name="heart-outline"></ion-icon>
-                  <ion-icon class="icon" name="eye-outline"></ion-icon>
-                  <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="favorite"
+                      name="heart-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon
+                      class="icon"
+                      aria-label="preview"
+                      name="eye-outline"
+                    ></ion-icon
+                  ></a>
+                  <a href="#">
+                    <ion-icon class="icon" name="git-branch-outline"></ion-icon
+                  ></a>
                 </div>
               </li>
             </ul>

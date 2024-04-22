@@ -34,7 +34,6 @@ html {
   --letterSpacing: 1px;
   --small-text: 0.875rem;
   --extra-small-text: 0.8em;
-  // 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
   --font-xs: 1.4rem;
   --font-s: 1.6rem;
@@ -133,7 +132,7 @@ ul {
   border-radius: 50%;
 }
 
-/* Buttons */
+/* BUTTONS */
 
 .btn {
   cursor: pointer;
@@ -150,11 +149,11 @@ ul {
 
   &:hover {
     background-color: var(--hoverColor);
-    box-shadow: var(--shadow-3);
+    box-shadow: var(--shadow-2);
   }
 }
 
-/* Alerts */
+/* ALERTS */
 
 .alert {
   padding: 0.375rem 0.75rem;
@@ -173,7 +172,7 @@ ul {
   }
 }
 
-/* Form */
+/* FORM */
 
 .form {
   width: 90vw;
@@ -221,7 +220,7 @@ ul {
   }
 }
 
-/* Spinner */
+/* SPINNER */
 
 @keyframes spinner {
   to {

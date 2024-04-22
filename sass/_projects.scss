@@ -24,6 +24,17 @@
       align-self: flex-end;
       margin-bottom: -1.5rem;
     }
+
+    a:link,
+    a:visited {
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    a:hover,
+    a:active {
+      color: var(--sideBar);
+    }
   }
 
   p {
