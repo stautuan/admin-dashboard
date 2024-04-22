@@ -1,5 +1,8 @@
 .project {
   &-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--contentColor);
     line-height: 1.4;
     border-radius: var(--borderRadius);
@@ -16,6 +19,10 @@
       background-color: var(--accentColor);
       height: 100%;
       padding: 0.5rem;
+    }
+    .project-icons {
+      align-self: flex-end;
+      margin-bottom: -1.5rem;
     }
   }
 

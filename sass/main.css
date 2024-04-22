@@ -134,8 +134,6 @@ ul {
   background: var(--sideBar);
   border: transparent;
   border-radius: var(--borderRadius);
-  font-family: inherit;
-  font-size: inherit;
   font-weight: 500;
   padding: 1rem 2rem;
   box-shadow: var(--shadow-1);
@@ -373,6 +371,9 @@ ul {
 }
 
 .project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--contentColor);
   line-height: 1.4;
   border-radius: var(--borderRadius);
@@ -389,6 +390,10 @@ ul {
   background-color: var(--accentColor);
   height: 100%;
   padding: 0.5rem;
+}
+.project-item .project-icons {
+  align-self: flex-end;
+  margin-bottom: -1.5rem;
 }
 .project p {
   color: var(--grey);
